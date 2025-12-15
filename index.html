@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World - Day 1 Demo</title>
+    <title>Hello World - Day 1 Demo Changes</title>
     <style>
         * {
             margin: 0;
@@ -91,6 +92,7 @@
                 opacity: 0;
                 transform: translateY(-20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -98,18 +100,19 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Hello World!</h1>
         <p>Welcome to Day 1 Demo</p>
         <p>This page demonstrates HTML, CSS, and JavaScript working together.</p>
-        
+
         <div class="counter" id="counter">0</div>
-        
+
         <button class="button" onclick="changeMessage()">Click Me!</button>
         <button class="button" onclick="incrementCounter()">Increment Counter</button>
         <button class="button" onclick="resetCounter()">Reset</button>
-        
+
         <div class="message" id="message">
             Click the button above to see JavaScript in action!
         </div>
@@ -148,17 +151,18 @@
 
         function getRandomColor() {
             const colors = [
-                '#ffe0e0', '#e0ffe0', '#e0e0ff', 
+                '#ffe0e0', '#e0ffe0', '#e0e0ff',
                 '#fff0e0', '#f0e0ff', '#e0fff0'
             ];
             return colors[Math.floor(Math.random() * colors.length)];
         }
 
         // Add some interactivity on page load
-        window.addEventListener('load', function() {
+        window.addEventListener('load', function () {
             console.log('Hello World page loaded successfully!');
             document.getElementById('message').style.transition = 'background 0.5s ease';
         });
     </script>
 </body>
+
 </html>
